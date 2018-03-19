@@ -103,14 +103,14 @@ class nRF24L01p:
 
     def flush_tx(self):
         """Flush TX FIFO, used in TX mode."""
-        return self.spi.xfer2( [self.FLUSH_TX])
+        return self.spi.xfer2( [self.FLUSH_TX])[0]
 
     def flush_rx(self):
         """Flush RX FIFO, used in RX mode
             Should not be executed during transmission of
             acknowledge, that is, acknowledge package will
             not be completed."""
-        return self.spi.xfer2( [self.FLUSH_RX])
+        return self.spi.xfer2( [self.FLUSH_RX])[0]
 
     def reuse_payload(self):
         """Used for a PTX device
@@ -119,7 +119,7 @@ class nRF24L01p:
             W_TX_PAYLOAD or FLUSH TX is executed. TX
             payload reuse must not be activated or deacti-
             vated during package transmission."""
-        return self.spi.xfer2( [self.REUSE_TX_PL])
+        return self.spi.xfer2( [self.REUSE_TX_PL])[0]
 
     def read_payload_length(self):
         """Read RX payload width for the top
