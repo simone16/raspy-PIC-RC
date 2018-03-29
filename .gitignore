@@ -1,1 +1,14 @@
 boilerplate.py
+
+*.pyc
+*.o
+*.as
+*.cmf
+*.cof
+*.d
+*.hxl
+*.p1
+*.pre
+*.sdb
+*.sym
+startup.*

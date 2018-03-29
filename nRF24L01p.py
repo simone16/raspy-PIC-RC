@@ -2,7 +2,7 @@
 # 
 # Library for ISP communication with nRF24L01+ for raspberrypi.
 # Uses spidev: https://github.com/doceme/py-spidev
-# For a more general library, see https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py
+# For a higher level library, see https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py
 
 import time
 import spidev
