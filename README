@@ -7,3 +7,4 @@ The radio hardware is made up of two nRF24L01+ single-chip transceivers.
 ## Contents of the project:
 
 * nRF24L01p.py	: Library for raspberry-to-nRF24L01+ communication.
+* nRF24L01p.h	: Library for PIC16F876A-to-nRF24L01+ communication.
